@@ -259,7 +259,7 @@
 		<div class="container-fluid meu_container_app cor_container anime" id="meu_container_app" style="padding: 0;">			
 
 			<div class="text-center minha_img2">
-				<img src="frontend/img/logos/QuemVaiLogo.png"  class="img-fluid">
+				<img src="frontend/img/logos/QuemVaiLogo3.png"  class="img-fluid">
 				<h1 class="txt1" style="margin-bottom: 5%; padding-bottom: 2%;">Vai do seu jeito!</h1> 	
 			</div>	
 			
