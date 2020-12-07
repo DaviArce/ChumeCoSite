@@ -1,4 +1,4 @@
-async function sendEmail() {
+async function sendEmail(e) {
   var sub = document.querySelector("input[name=txtNome]");
   var msg = document.querySelector("textarea[name=txtMsg]");
   var rcvr = document.querySelector("input[name=txtEmail]");
@@ -17,7 +17,11 @@ async function sendEmail() {
         assunto: subject,
         msg: message,
       });
-
+         
+      e.preventDefault();
+      document.querySelector("input[name=txtNome]").reset();
+      document.querySelector("textarea[name=txtMsg]").reset();
+      document.querySelector("input[name=txtEmail]").reset(); 
       if (result.status == 400) {
         alert("O email que você digitou não existe");
       } else if (result.status == 204) {
